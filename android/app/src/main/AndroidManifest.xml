@@ -15,7 +15,15 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBarLaunch"
             android:launchMode="singleTask"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:windowFullscreen="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- Enables full-screen immersive mode -->
+            <meta-data
+                android:name="android.max_aspect"
+                android:value="2.1"></meta-data>
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
